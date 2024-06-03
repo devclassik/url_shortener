@@ -60,28 +60,28 @@ export default function Faq() {
       </h2>
 
       {steps.map((step, index) => (
-        <div
-          key={index}
-          className="flex flex-row justify-between border-b-2 border-t-2 border-gray-300 py-2 items-center hover:bg-[#e8e8e8] hover:cursor-pointer"
-        >
-          <div className="w-1/4 text-lg sm:text-md md:text-xl lg:text-2xl">
-            {step?.tag}
+          <div
+            key={index}
+            className="flex flex-row justify-between border-t-2  pt-5 mt-10 border-[#D6D6D6] items-center hover:bg-[#e8e8e8] hover:cursor-pointer group"
+          >
+            <div className="w-1/4 text-sm text-[#202229] sm:text-md border-r-2 border-[#D6D6D6] md:text-xl lg:text-xl font-bold px-4">
+              {step?.tag}
+            </div>
+            <div className="w-1/4 text-sm text-[#202229] sm:text-md md:text-2xl lg:text-xl font-bold px-4">
+              {step?.subTag}
+            </div>
+            <div className="w-1/4 text-sm text-[#202229] sm:text-md md:text-2xl lg:text-xl">
+              {step?.question}
+            </div>
+            <div className="w-1/4">
+              <img
+                src={step.image}
+                alt="Icon"
+                className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 right-5 "
+              />
+            </div>
           </div>
-          <div className="w-1/4 text-lg sm:text-xl md:text-2xl lg:text-3xl">
-            {step?.subTag}
-          </div>
-          <div className="w-1/4 text-lg sm:text-xl md:text-2xl lg:text-3xl">
-            {step?.question}
-          </div>
-          <div className="w-1/4">
-            <img
-              src={step.image}
-              alt="Icon"
-              className=" transition-opacity duration-300"
-            />
-          </div>
-        </div>
-      ))}
+        ))}
     </div>
   );
 }
