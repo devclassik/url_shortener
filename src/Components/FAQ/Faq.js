@@ -54,34 +54,36 @@ export default function Faq() {
   ];
 
   return (
-    <div className="bg-[#f3f3f3] min-h-screen flex flex-col p-10">
-      <h2 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-        Frequently asked questions{" "}
+    <div className="bg-[#f3f3f3] min-h-screen flex flex-col p-6 sm:p-10">
+      <h2 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
+        Frequently asked questions
       </h2>
 
-      {steps.map((step, index) => (
+      <div className="w-full sm:w-11/12 md:w-4/5 mx-auto">
+        {steps.map((step, index) => (
           <div
             key={index}
-            className="flex flex-row justify-between border-t-2  pt-5 mt-10 border-[#D6D6D6] items-center hover:bg-[#e8e8e8] hover:cursor-pointer group"
+            className="flex flex-col md:flex-row justify-between border-t-2 pt-5 mt-6 md:mt-10 border-[#D6D6D6] items-center hover:bg-[#e8e8e8] hover:cursor-pointer group"
           >
-            <div className="w-1/4 text-sm text-[#202229] sm:text-md border-r-2 border-[#D6D6D6] md:text-xl lg:text-xl font-bold px-4">
+            <div className="w-full md:w-1/4 text-xs sm:text-sm md:text-md lg:text-lg text-[#202229] md:border-r-2 border-[#D6D6D6] font-bold px-2 sm:px-4 py-2 md:py-0">
               {step?.tag}
             </div>
-            <div className="w-1/4 text-sm text-[#202229] sm:text-md md:text-2xl lg:text-xl font-bold px-4">
+            <div className="w-full md:w-1/4 text-xs sm:text-sm md:text-md lg:text-lg text-[#202229] font-bold px-2 sm:px-4 py-2 md:py-0">
               {step?.subTag}
             </div>
-            <div className="w-1/4 text-sm text-[#202229] sm:text-md md:text-2xl lg:text-xl">
+            <div className="w-full md:w-1/4 text-xs sm:text-sm md:text-md lg:text-lg text-[#202229] px-2 sm:px-4 py-2 md:py-0">
               {step?.question}
             </div>
-            <div className="w-1/4">
+            <div className="w-full md:w-1/4 flex justify-center md:justify-end px-2 sm:px-4 py-2 md:py-0">
               <img
                 src={step.image}
                 alt="Icon"
-                className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 right-5 "
+                className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               />
             </div>
           </div>
         ))}
+      </div>
     </div>
   );
 }
