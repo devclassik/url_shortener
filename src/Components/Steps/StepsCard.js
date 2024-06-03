@@ -5,7 +5,7 @@ const StepsCard = ({ image, name, title, children }) => {
 
   return (
     <div
-      className={`max-w-md mx-auto shadow-md rounded-lg overflow-hidden bg-[#F0F0F0] border border-[#6d6d6d] transition-transform duration-300 ${isHovered ? 'scale-105' : ''}`}
+      className={`max-w-md mx-auto shadow-md rounded-lg overflow-hidden bg-[#ffffff] border border-[#6d6d6d] transition-transform duration-300 ${isHovered ? 'scale-105' : ''}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

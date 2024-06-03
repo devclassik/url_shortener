@@ -24,7 +24,7 @@ export default function Home2() {
             <img
               src={l1}
               alt="head"
-              className="h-8 w-auto inline-block mx-2 sm:h-10 md:h-12 lg:h-14"
+              className="h-8 w-auto inline-block mx-2 sm:h-10 md:h-12 lg:h-14 hover:animate-bounce hover:cursor-pointer "
             />
           </span>
           has never been easier.
@@ -42,7 +42,7 @@ export default function Home2() {
             autoComplete="off"
             spellCheck="false"
             aria-live="polite"
-            placeholder="Looking for design |"
+            placeholder="<strong>Looking for</strong> design |"
           />
           <img
             src={goImage}
