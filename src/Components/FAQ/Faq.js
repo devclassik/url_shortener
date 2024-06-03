@@ -63,15 +63,15 @@ export default function Faq() {
         {steps.map((step, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row justify-between border-t-2 pt-5 mt-6 md:mt-10 border-[#D6D6D6] items-center hover:bg-[#e8e8e8] hover:cursor-pointer group"
+            className="flex flex-col md:flex-row justify-between border-t-2 py-10 border-[#D6D6D6] items-center hover:bg-[#e8e8e8] hover:cursor-pointer group"
           >
-            <div className="w-full md:w-1/4 text-xs sm:text-sm md:text-md lg:text-lg text-[#202229] md:border-r-2 border-[#D6D6D6] font-bold px-2 sm:px-4 py-2 md:py-0">
+            <div className="w-full md:w-1/4 text-xs sm:text-sm md:text-md lg:text-lg text-[#202229] md:border-r-2 border-[#D6D6D6] font-bold sm:px-4 md:py-0">
               {step?.tag}
             </div>
-            <div className="w-full md:w-1/4 text-xs sm:text-sm md:text-md lg:text-lg text-[#202229] font-bold px-2 sm:px-4 py-2 md:py-0">
+            <div className="w-full md:w-1/4 text-xs sm:text-sm md:text-md lg:text-lg text-[#202229] font-bold sm:px-4 md:py-0">
               {step?.subTag}
             </div>
-            <div className="w-full md:w-1/4 text-xs sm:text-sm md:text-md lg:text-lg text-[#202229] px-2 sm:px-4 py-2 md:py-0">
+            <div className="w-full md:w-1/4 text-xs sm:text-sm md:text-md lg:text-lg text-[#202229] sm:px-4 md:py-0">
               {step?.question}
             </div>
             <div className="w-full md:w-1/4 flex justify-center md:justify-end px-2 sm:px-4 py-2 md:py-0">

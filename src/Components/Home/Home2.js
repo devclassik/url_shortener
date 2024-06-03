@@ -1,19 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import goImage from "../../Assets/p-go.png";
 import hHome from "../../Assets/h-lines.png";
 import l1 from "../../Assets/l1.png";
 
 export default function Home2() {
-    const [query, setQuery] = React.useState("");
-    const searchRef = React.useRef(null);
-  
-    const onSearch = (e) => {
-      const value = e.target.value;
-  
-      setQuery(value);
-    };
-  
-    const isSearching = query?.length > 0;
+  const [query, setQuery] = React.useState("");
+  const searchRef = React.useRef(null);
+  const [isFocused, setIsFocused] = useState(false);
+
+  const onSearch = (e) => {
+    const value = e.target.value;
+
+    setQuery(value);
+  };
+
+  const isSearching = query?.length > 0;
 
   return (
     <>
@@ -33,20 +34,29 @@ export default function Home2() {
           With our rigorous pre-vetting process, you'll never have to <br />
           worry about finding the ideal candidate ever again.
         </h2>
-        <div class="flex flex-col sm:flex-row items-center justify-center mx-auto p-4">
-          <input
-            class="search-input rounded-lg text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#202229] outline-none border border-gray-300 focus:outline-none px-4 py-2 w-full sm:w-auto"
-            type="search"
-            title="Search"
-            role="searchbox"
-            autoComplete="off"
-            spellCheck="false"
-            aria-live="polite"
-            placeholder="<strong>Looking for</strong> design |"
-          />
+        <div className="flex flex-col sm:flex-row items-center justify-center mx-auto p-4">
+          <div className="relative w-full sm:w-auto">
+            <input
+              className="search-input rounded-lg text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#202229] outline-none border border-gray-300 focus:outline-none px-4 py-2 w-full sm:w-auto"
+              type="search"
+              title="Search"
+              role="searchbox"
+              autoComplete="off"
+              spellCheck="false"
+              aria-live="polite"
+              onFocus={() => setIsFocused(true)}
+              onBlur={() => setIsFocused(false)}
+            />
+            {!isFocused && (
+              <div className="absolute inset-y-0 left-0 flex items-center pointer-events-none pl-4 text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-400">
+                <span className="font-bold">Looking for</span>
+                <span className="ml-1"> design |</span>
+              </div>
+            )}
+          </div>
           <img
             src={goImage}
-            className="h-14 mt-2 sm:mt-0 -ml-2 cursor-pointer"
+            className="h-14 mt-2 sm:mt-0 sm:ml-2 cursor-pointer"
             alt="goButton"
           />
         </div>
