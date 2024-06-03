@@ -56,14 +56,14 @@ export default function Home2() {
           </div>
           <img
             src={goImage}
-            className="h-14 mt-2 sm:mt-0 sm:ml-2 cursor-pointer"
+            className="h-14 mt-2 sm:mt-0 sm:-ml-0 cursor-pointer"
             alt="goButton"
           />
         </div>
       </div>
 
       <div className="max-w-[20rem] sm:max-w-2xl pb-2 mx-auto bg-[#F8F8F8] shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-        <div className="flex flex-wrap justify-center py-2 space-x-2">
+        <div className="flex flex-wrap justify-center py-2 -space-x-1">
           <button className="z-10 whitespace-nowrap inline-flex items-center justify-center px-6 py-2 border border-transparent rounded-[10px] shadow-sm text-base font-medium text-black bg-[#C7F4C2]/75 hover:bg-[#C7F4C2]">
             IT & Development
           </button>

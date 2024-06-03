@@ -13,7 +13,7 @@ const TeamCard = ({ title, members }) => {
           {members.map((member, index) => (
             <div key={index} className="flex flex-col items-center">
               {/* Image inside a Circle */}
-              <div className="w-12 h-12 md:w-20 md:h-20 rounded-full overflow-hidden border-4 bg-[#F6F6F6] flex items-center justify-center">
+              <div className="w-10 h-10 md:w-20 md:h-20 rounded-full overflow-hidden border-4 bg-[#F6F6F6] flex items-center justify-center">
                 <img
                   src={member.image}
                   alt={member.name}

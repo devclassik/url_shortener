@@ -9,7 +9,7 @@ export default function JourneyCard({ bg, steps }) {
 
   return (
     <div
-      className=" flex flex-col md:flex-row clip-custom-sm p-10"
+      className=" flex flex-col md:flex-row clip-custom-sm p-2"
       style={bgStyle}
     >
       {/* Left Section */}

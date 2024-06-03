@@ -6,9 +6,9 @@ import footerButton from "../Assets/f-button.png";
 function Footer() {
   return (
     <footer className="bg-gradient-to-r from-[#0c0c0c] to-[#202229] flex flex-col clip-custom2">
-      <div className="p-4 col-span-full mx-auto mt-[4rem] bg-[#525AA0] w-3/6 -rotate-3 md:w-2/6 md:-rotate-3">
-        <div className="rotate-3 mt-[5%]">
-          <p className="p-4 text-white text-xl leading-none sm:text-2xl md:text-3xl lg:text-6xl w-[70%] sm:w-[90%] mx-auto mb-6 text-center">
+      <div className="p-4 col-span-full clip-custom mx-auto mt-[4rem] bg-[#525AA0] w-3/6 md:w-2/6">
+        <div className="clip-custom py-2">
+          <p className="p-4 text-white text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl w-[70%] sm:w-[90%] mx-auto mb-6 text-center">
             Need a job done, and done well? Get started
           </p>
 
@@ -52,153 +52,152 @@ function Footer() {
               </p>
             </div>
             <div class="text-center sm:text-left">
-            <p class="text-sm font-[200] text-white uppercase opacity-40">
-              Platform
-            </p>
-            <nav class="mt-8">
-              <ul class="space-y-4 text-sm">
+              <p class="text-sm font-[200] text-white uppercase opacity-40">
+                Platform
+              </p>
+              <nav class="mt-8">
+                <ul class="space-y-4 text-sm">
+                  <li>
+                    <a
+                      class="text-white transition text hover:text-gray-400/75 hover:underline"
+                      href="/"
+                    >
+                      Find work
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="text-white transition hover:text-gray-400/75 hover:underline"
+                      href="/"
+                    >
+                      Find Talent
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="text-white transition hover:text-gray-400/75 hover:underline"
+                      href="/"
+                    >
+                      Categories
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="text-white transition hover:text-gray-400/75 hover:underline"
+                      href="/"
+                    >
+                      About us
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="text-center sm:text-left">
+              <p class="text-sm font-[200] text-white uppercase opacity-40">
+                {" "}
+                categories
+              </p>
+
+              <nav class="mt-8">
+                <ul class="space-y-4 text-sm">
+                  <li>
+                    <a
+                      class="text-white transition hover:text-gray-400/75 hover:underline"
+                      href="/"
+                    >
+                      Data science
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="text-white transition hover:text-gray-400/75 hover:underline"
+                      href="/"
+                    >
+                      IT & Networking
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="text-white transition hover:text-gray-400/75 hover:underline"
+                      href="/"
+                    >
+                      Web & Mobile
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="text-center sm:text-left">
+              <p class="text-sm font-[200] text-white uppercase opacity-40">
+                Help
+              </p>
+
+              <nav class="mt-8">
+                <ul class="space-y-4 text-sm">
+                  <li>
+                    <a
+                      class="text-white transition hover:text-gray-400/75 hover:underline"
+                      href="/"
+                    >
+                      FAQ's
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="text-white transition hover:text-gray-400/75 hover:underline"
+                      href="/"
+                    >
+                      Contact us
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="text-center sm:text-left">
+              <p class="text-sm font-[200] text-white uppercase opacity-40">
+                get in touch @{" "}
+              </p>
+
+              <ul class="mt-8 space-y-4 text-sm">
                 <li>
                   <a
-                    class="text-white transition text hover:text-gray-400/75 hover:underline"
+                    class="flex items-center justify-center sm:justify-start gap-1.5 group"
                     href="/"
                   >
-                    Find work
+                    <span class="text-white transition group-hover:text-gray-400/75 hover:underline ">
+                      Instagram
+                    </span>
                   </a>
                 </li>
 
                 <li>
                   <a
-                    class="text-white transition hover:text-gray-400/75 hover:underline"
+                    class="flex items-center justify-center sm:justify-start gap-1.5 group"
                     href="/"
                   >
-                    Find Talent
+                    <span class="text-white transition group-hover:text-gray-400/75 hover:underline ">
+                      Linkedin
+                    </span>
                   </a>
                 </li>
 
-                <li>
-                  <a
-                    class="text-white transition hover:text-gray-400/75 hover:underline"
-                    href="/"
-                  >
-                    Categories
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    class="text-white transition hover:text-gray-400/75 hover:underline"
-                    href="/"
-                  >
-                    About us
-                  </a>
+                <li class="flex items-start justify-center gap-1.5 sm:justify-start">
+                  <address class="-mt-0.5 not-italic text-white  hover:text-gray-400/75 hover:underline hover:cursor-pointer ">
+                    Twitter
+                  </address>
                 </li>
               </ul>
-            </nav>
+            </div>
           </div>
-
-          <div class="text-center sm:text-left">
-            <p class="text-sm font-[200] text-white uppercase opacity-40">
-              {" "}
-              categories
-            </p>
-
-            <nav class="mt-8">
-              <ul class="space-y-4 text-sm">
-                <li>
-                  <a
-                    class="text-white transition hover:text-gray-400/75 hover:underline"
-                    href="/"
-                  >
-                    Data science
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    class="text-white transition hover:text-gray-400/75 hover:underline"
-                    href="/"
-                  >
-                    IT & Networking
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    class="text-white transition hover:text-gray-400/75 hover:underline"
-                    href="/"
-                  >
-                    Web & Mobile
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="text-center sm:text-left">
-            <p class="text-sm font-[200] text-white uppercase opacity-40">
-              Help
-            </p>
-
-            <nav class="mt-8">
-              <ul class="space-y-4 text-sm">
-                <li>
-                  <a
-                    class="text-white transition hover:text-gray-400/75 hover:underline"
-                    href="/"
-                  >
-                    FAQ's
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    class="text-white transition hover:text-gray-400/75 hover:underline"
-                    href="/"
-                  >
-                    Contact us
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="text-center sm:text-left">
-            <p class="text-sm font-[200] text-white uppercase opacity-40">
-              get in touch @{" "}
-            </p>
-
-            <ul class="mt-8 space-y-4 text-sm">
-              <li>
-                <a
-                  class="flex items-center justify-center sm:justify-start gap-1.5 group"
-                  href="/"
-                >
-                  <span class="text-white transition group-hover:text-gray-400/75 hover:underline ">
-                    Instagram
-                  </span>
-                </a>
-              </li>
-
-              <li>
-                <a
-                  class="flex items-center justify-center sm:justify-start gap-1.5 group"
-                  href="/"
-                >
-                  <span class="text-white transition group-hover:text-gray-400/75 hover:underline ">
-                    Linkedin
-                  </span>
-                </a>
-              </li>
-
-              <li class="flex items-start justify-center gap-1.5 sm:justify-start">
-                <address class="-mt-0.5 not-italic text-white  hover:text-gray-400/75 hover:underline hover:cursor-pointer ">
-                  Twitter
-                </address>
-              </li>
-            </ul>
-          </div>
-          </div>
-
         </div>
 
         <div className="pt-6 mt-12 border-t border-gray-800">

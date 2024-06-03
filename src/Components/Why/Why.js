@@ -72,7 +72,7 @@ export default function Why() {
   };
 
   return (
-    <div className="bg-[#f4f5ff] min-h-screen flex flex-col md:flex-row p-10">
+    <div className="bg-[#f4f5ff] min-h-screen flex flex-col md:flex-row p-10 clip-custom-b">
       <div className="w-full md:w-2/5 flex justify-center items-center p-4">
         <WhyCard whyText={whyText} />
       </div>

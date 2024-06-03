@@ -54,8 +54,8 @@ export default function Faq() {
   ];
 
   return (
-    <div className="bg-[#f3f3f3] min-h-screen flex flex-col p-6 sm:p-10">
-      <h2 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
+    <div className="bg-[#f3f3f3] min-h-screen flex flex-col p-6 sm:p-10 clip-custom-f -mt-9">
+      <h2 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 pt-10">
         Frequently asked questions
       </h2>
 
