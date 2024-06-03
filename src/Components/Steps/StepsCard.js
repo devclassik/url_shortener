@@ -10,7 +10,7 @@ const StepsCard = ({ image, name, title, children }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="flex items-center p-6">
-        <div className={`flex justify-center items-center rounded-full h-16 w-16 transition-colors duration-300 ${isHovered ? 'bg-[#8BA4FD]' : 'bg-[#cecece]'}`}>
+        <div className={`flex justify-center items-center rounded-full h-16 w-16 transition-colors duration-300 ${isHovered ? 'bg-[#8ba4fd]' : 'bg-[#cecece]'}`}>
           <img
             className="h-6 w-6 object-cover rounded-full"
             src={image}

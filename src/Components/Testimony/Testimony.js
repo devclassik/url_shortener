@@ -29,7 +29,7 @@ export default function Testimony() {
               <img
                 src={ti}
                 alt="head"
-                className="h-8 w-auto inline-block mx-2 sm:h-10 md:h-12 lg:h-14"
+                className="h-8 w-auto inline-block mx-2 sm:h-10 md:h-12 lg:h-14 hover:animate-bounce hover:cursor-pointer"
               />
             </span>
             at
