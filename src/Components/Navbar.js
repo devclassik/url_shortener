@@ -49,19 +49,7 @@ function NavBar() {
                 href="#"
                 className="text-base font-medium text-white hover:text-gray-900"
               >
-                Find Work
-              </a>
-              <a
-                href="#"
-                className="text-base font-medium text-white hover:text-gray-900"
-              >
-                Find Talent
-              </a>
-              <a
-                href="#"
-                className="text-base font-medium text-white hover:text-gray-900"
-              >
-                Articles
+                Shortener
               </a>
               <a
                 href="#"
@@ -92,16 +80,6 @@ function NavBar() {
             </div>
           </div>
         </div>
-        {/*
-      Mobile menu, show/hide based on mobile menu state.
-  
-      Entering: "duration-200 ease-out"
-        From: ""
-        To: ""
-      Leaving: "duration-100 ease-in"
-        From: "opacity-100 scale-100"
-        To: "opacity-0 scale-95"
-    */}
 
         <div
           className={
@@ -156,19 +134,7 @@ function NavBar() {
                   href="#"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
-                  Find Work
-                </a>
-                <a
-                  href="#"
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Find Talent
-                </a>
-                <a
-                  href="#"
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Articles
+                  Shortener
                 </a>
                 <a
                   href="#"

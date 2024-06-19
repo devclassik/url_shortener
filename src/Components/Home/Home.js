@@ -7,7 +7,6 @@ import Testimony from "../Testimony/Testimony";
 import Steps from "../Steps/Steps";
 import Journey from "../Journey/Journey";
 import Why from "../Why/Why";
-import Faq from "../FAQ/Faq";
 import Home2 from "./Home2";
 
 export default function Home() {
@@ -15,7 +14,7 @@ export default function Home() {
 
   return (
     <>
-      <section class="text-gray-600 body-font pb-2">
+      <section className="text-gray-600 body-font pb-2">
         <Home2 />
       </section>
 
@@ -26,18 +25,13 @@ export default function Home() {
       <section className="body-font pb-2">
         <Testimony />
       </section>
-      <section className="body-font pb-2">
-        <Steps />
-      </section>
+
       <section className="body-font pb-4">
         <Journey />
       </section>
-    
+
       <section className="body-font pb-4">
         <Why />
-      </section>
-      <section className="body-font pb-4">
-        <Faq />
       </section>
 
     </>

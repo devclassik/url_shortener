@@ -11,9 +11,9 @@ import "slick-carousel/slick/slick-theme.css";
 export default function Why() {
   const whyText = [
     {
-      title: "Why choose Zwilt?",
+      title: "Why choose Url Shortener?",
       description:
-        "We take complex hiring processes - and simplify them. Connecting you to the world’s highly qualified talent pool.",
+        "We take complex url - and simplify them. Connecting you to the world’s highly sort after url.",
     },
   ];
 

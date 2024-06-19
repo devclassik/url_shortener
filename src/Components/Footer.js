@@ -6,17 +6,7 @@ import footerButton from "../Assets/f-button.png";
 function Footer() {
   return (
     <footer className="bg-gradient-to-r from-[#0c0c0c] to-[#202229] flex flex-col clip-custom2">
-      <div className="p-4 col-span-full clip-custom mx-auto mt-[4rem] bg-[#525AA0] w-3/6 md:w-2/6">
-        <div className="clip-custom py-2">
-          <p className="p-4 text-white text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl w-[70%] sm:w-[90%] mx-auto mb-6 text-center">
-            Need a job done, and done well? Get started
-          </p>
 
-          <div className="m-auto flex justify-center">
-            <Button size="50px" src={footerButton} alt="footerImage" />
-          </div>
-        </div>
-      </div>
       <div className="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-20 w-full">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
@@ -27,39 +17,23 @@ function Footer() {
               We take complex hiring processes - and simplify them. Connecting
               you to the world’s highly qualified talent pool.
             </p>
-
-            <p className="text-[#FFFFFF] opacity-40 font-thin text-[10px] mb-2">
-              LINKS AND REDIRECTS
-            </p>
-            <ul className="flex justify-center gap-6 md:gap-2 sm:justify-start">
-              <li>
-                <button className="text-[#EDEFFF] font-[100] transition text-[10px] bg-zinc-800/75 px-6 py-2 rounded-[10px] hover:text-teal-500/75 capitalize">
-                  hire now
-                </button>
-              </li>
-              <li>
-                <button className="text-[#EDEFFF] font-[100] transition text-[10px] bg-zinc-800/75 px-6 py-2 rounded-[10px] hover:text-teal-500/75 capitalize">
-                  apply now
-                </button>
-              </li>
-            </ul>
           </div>
 
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4">
-            <div class="p-4 col-span-full">
-              <p class="pr-6 text-white text-[2.7rem] leading-none -mt-2">
+            <div className="p-4 col-span-full">
+              <p className="pr-6 text-white text-[2.7rem] leading-none -mt-2">
                 Connecting the right people to the right businesses.
               </p>
             </div>
-            <div class="text-center sm:text-left">
-              <p class="text-sm font-[200] text-white uppercase opacity-40">
+            <div className="text-center sm:text-left">
+              <p className="text-sm font-[200] text-white uppercase opacity-40">
                 Platform
               </p>
-              <nav class="mt-8">
-                <ul class="space-y-4 text-sm">
+              <nav className="mt-8">
+                <ul className="space-y-4 text-sm">
                   <li>
                     <a
-                      class="text-white transition text hover:text-gray-400/75 hover:underline"
+                      className="text-white transition text hover:text-gray-400/75 hover:underline"
                       href="/"
                     >
                       Find work
@@ -68,7 +42,7 @@ function Footer() {
 
                   <li>
                     <a
-                      class="text-white transition hover:text-gray-400/75 hover:underline"
+                      className="text-white transition hover:text-gray-400/75 hover:underline"
                       href="/"
                     >
                       Find Talent
@@ -77,7 +51,7 @@ function Footer() {
 
                   <li>
                     <a
-                      class="text-white transition hover:text-gray-400/75 hover:underline"
+                      className="text-white transition hover:text-gray-400/75 hover:underline"
                       href="/"
                     >
                       Categories
@@ -86,7 +60,7 @@ function Footer() {
 
                   <li>
                     <a
-                      class="text-white transition hover:text-gray-400/75 hover:underline"
+                      className="text-white transition hover:text-gray-400/75 hover:underline"
                       href="/"
                     >
                       About us
@@ -96,17 +70,17 @@ function Footer() {
               </nav>
             </div>
 
-            <div class="text-center sm:text-left">
-              <p class="text-sm font-[200] text-white uppercase opacity-40">
+            <div className="text-center sm:text-left">
+              <p className="text-sm font-[200] text-white uppercase opacity-40">
                 {" "}
                 categories
               </p>
 
-              <nav class="mt-8">
-                <ul class="space-y-4 text-sm">
+              <nav className="mt-8">
+                <ul className="space-y-4 text-sm">
                   <li>
                     <a
-                      class="text-white transition hover:text-gray-400/75 hover:underline"
+                      className="text-white transition hover:text-gray-400/75 hover:underline"
                       href="/"
                     >
                       Data science
@@ -115,7 +89,7 @@ function Footer() {
 
                   <li>
                     <a
-                      class="text-white transition hover:text-gray-400/75 hover:underline"
+                      className="text-white transition hover:text-gray-400/75 hover:underline"
                       href="/"
                     >
                       IT & Networking
@@ -124,7 +98,7 @@ function Footer() {
 
                   <li>
                     <a
-                      class="text-white transition hover:text-gray-400/75 hover:underline"
+                      className="text-white transition hover:text-gray-400/75 hover:underline"
                       href="/"
                     >
                       Web & Mobile
@@ -134,16 +108,16 @@ function Footer() {
               </nav>
             </div>
 
-            <div class="text-center sm:text-left">
-              <p class="text-sm font-[200] text-white uppercase opacity-40">
+            <div className="text-center sm:text-left">
+              <p className="text-sm font-[200] text-white uppercase opacity-40">
                 Help
               </p>
 
-              <nav class="mt-8">
-                <ul class="space-y-4 text-sm">
+              <nav className="mt-8">
+                <ul className="space-y-4 text-sm">
                   <li>
                     <a
-                      class="text-white transition hover:text-gray-400/75 hover:underline"
+                      className="text-white transition hover:text-gray-400/75 hover:underline"
                       href="/"
                     >
                       FAQ's
@@ -152,7 +126,7 @@ function Footer() {
 
                   <li>
                     <a
-                      class="text-white transition hover:text-gray-400/75 hover:underline"
+                      className="text-white transition hover:text-gray-400/75 hover:underline"
                       href="/"
                     >
                       Contact us
@@ -162,18 +136,18 @@ function Footer() {
               </nav>
             </div>
 
-            <div class="text-center sm:text-left">
-              <p class="text-sm font-[200] text-white uppercase opacity-40">
+            <div className="text-center sm:text-left">
+              <p className="text-sm font-[200] text-white uppercase opacity-40">
                 get in touch @{" "}
               </p>
 
-              <ul class="mt-8 space-y-4 text-sm">
+              <ul className="mt-8 space-y-4 text-sm">
                 <li>
                   <a
-                    class="flex items-center justify-center sm:justify-start gap-1.5 group"
+                    className="flex items-center justify-center sm:justify-start gap-1.5 group"
                     href="/"
                   >
-                    <span class="text-white transition group-hover:text-gray-400/75 hover:underline ">
+                    <span className="text-white transition group-hover:text-gray-400/75 hover:underline ">
                       Instagram
                     </span>
                   </a>
@@ -181,17 +155,17 @@ function Footer() {
 
                 <li>
                   <a
-                    class="flex items-center justify-center sm:justify-start gap-1.5 group"
+                    className="flex items-center justify-center sm:justify-start gap-1.5 group"
                     href="/"
                   >
-                    <span class="text-white transition group-hover:text-gray-400/75 hover:underline ">
+                    <span className="text-white transition group-hover:text-gray-400/75 hover:underline ">
                       Linkedin
                     </span>
                   </a>
                 </li>
 
-                <li class="flex items-start justify-center gap-1.5 sm:justify-start">
-                  <address class="-mt-0.5 not-italic text-white  hover:text-gray-400/75 hover:underline hover:cursor-pointer ">
+                <li className="flex items-start justify-center gap-1.5 sm:justify-start">
+                  <address className="-mt-0.5 not-italic text-white  hover:text-gray-400/75 hover:underline hover:cursor-pointer ">
                     Twitter
                   </address>
                 </li>
@@ -219,7 +193,7 @@ function Footer() {
             </p>
 
             <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
-              All rights reserved by Zwilt
+              All rights reserved by Opemipo Alomaja
             </p>
           </div>
         </div>

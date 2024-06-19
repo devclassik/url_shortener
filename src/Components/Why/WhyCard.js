@@ -6,7 +6,7 @@ export default function WhyCard({ whyText }) {
 
     const details = whyText;
 
-    console.log('det', details);
+    // console.log('det', details);
 
 
   return (
